@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Load the main bootstrap style sheet -->
+		<link href="../../styles/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<title>Monthly Payment Calculator For Cars</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<div class="container">
+			<div class="col-sm-12">
+				<h3 class="text-info">Payment Calculator</h3>
+
+				<div class="card bg-light">
+				<div class="card-body">
+				<fieldset>
+					<legend>Payment Calculator</legend>
+					<div class="form-group row">
+						<label for="loan" class="col-form-label col-sm-3">Amount of the loan:</label>
+						<div class="col-sm-9">
+            <input type="text" class="form-control" id="loan" />
+					</div>
+					<div class="form-group row">
+						<label for="duration" class="col-form-label col-sm-3">Duration:</label>
+						<div class="col-sm-9">
+							<select class="form-control" id="duration">
+								<option value="36">36 months</option>
+								<option value="48">48 months</option>
+								<option value="60">60 months</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<div class="offset-md-9 col-sm-3">
+							<button class="btn btn-primary" id="compute">Compute </button>
+						</div>
+					</div>
+				</fieldset>
+				</div>
+				</div>
+				<div class="card">
+				<div class="card-body">
+				<p id="result"></p>
+				</div>
+				</div>
+			</div>
+		</div>
+		<script src="hw4.js"></script>
+	</body>
+</html>
